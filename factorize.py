@@ -2,7 +2,7 @@
 import sys
 
 
-def factorize(num):
+def factorize(numb):
     """ Generates 2 factors for a given number"""
     factor_1 = 2
     while (numb % factor_1):
@@ -23,5 +23,5 @@ lines = file.readlines()
 
 for line in lines:
     numb = int(line.rstrip())
-    factor_2, factor_1 = factorize(num)
+    factor_2, factor_1 = factorize(numb)
     print(f"{numb} = {factor_2} * {factor_1}")
